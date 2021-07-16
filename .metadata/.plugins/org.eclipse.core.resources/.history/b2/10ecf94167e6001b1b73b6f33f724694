@@ -1,0 +1,14 @@
+package Test;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import Metodos.Metodos;;
+
+public class TestPrueba1 {
+	  @Test
+	  public void testCalculaSalarioBruto1() {
+	    float resultadoReal = Metodos.prueba1(cadena);
+	    float resultadoEsperado = 1360.0f;
+	    assertEquals(resultadoEsperado, resultadoReal, 0.01);
+	  }
+}

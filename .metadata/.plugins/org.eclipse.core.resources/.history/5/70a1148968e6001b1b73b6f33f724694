@@ -1,0 +1,21 @@
+package Test;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import Metodos.Metodos;;
+
+public class TestPrueba {
+	  @Test
+	  public void testPregunta1() { 
+		 Metodos metodo = new Metodos();
+	    boolean resultado  = metodo.prueba1("aabbcc"); 
+	    assertEquals(resultado, false);
+	  }
+	  
+	  @Test
+	  public void testPregunta2() {
+		  Metodos metodo = new Metodos();
+		  boolean resultado = metodo.prueba2("aabbccc");
+		  assertEquals(resultado, false);
+	  }
+}
